@@ -70,7 +70,14 @@
 %----------------------------------------------------------------------------------------
 
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
-
+% -------------------- HYPERREF POUR LES LIENS DANS LES PDF -----------------------------
+\usepackage{hyperref}
+\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor= blue,bookmarks=true,bookmarksopen=false,pdftitle={book title},pdfauthor={book author}}
+% compression pdf
+\pdfminorversion=5
+\pdfobjcompresslevel=6 
+\pdfcompresslevel=9
+%----------------------------------------------------------------------------------------
 \begin{document}
 
 %----------------------------------------------------------------------------------------
