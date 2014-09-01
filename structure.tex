@@ -20,6 +20,10 @@
 
 \usepackage{eso-pic} % Required for specifying an image background in the title page
 
+\usepackage[small,hang]{caption2}
+\renewcommand{\captionfont}{\it \small \sc}
+\renewcommand{\captionlabelfont}{\it \bf \small}
+\renewcommand{\captionlabeldelim}{ :}
 %----------------------------------------------------------------------------------------
 %	MAIN TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
@@ -27,12 +31,22 @@
 \usepackage{titletoc} % Required for manipulating the table of contents
 
 \contentsmargin{0cm} % Removes the default margin
+
+% PART text styling
+\titlecontents{part}[1.25cm] % Indentation
+{\addvspace{15pt}\LARGE\sffamily\bfseries} % Spacing and font options for Part
+{\color{ocre!60}\contentslabel[\LARGE Partie : \thecontentslabel]{3cm}\color{ocre}} % Part number
+{}  
+{\color{ocre!60}\normalsize\sffamily\bfseries\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+[]
+
 % Chapter text styling
 \titlecontents{chapter}[1.25cm] % Indentation
 {\addvspace{15pt}\large\sffamily\bfseries} % Spacing and font options for chapters
 {\color{ocre!60}\contentslabel[\Large Chapitre : \thecontentslabel]{3cm}\color{ocre}} % Chapter number
 {}  
 {\color{ocre!60}\normalsize\sffamily\bfseries\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+[]
 % Section text styling
 \titlecontents{section}[1.25cm] % Indentation
 {\addvspace{5pt}\sffamily\bfseries} % Spacing and font options for sections
@@ -40,6 +54,7 @@
 {}
 {\sffamily\hfill\color{black}\thecontentspage} % Page number
 []
+
 % Subsection text styling
 \titlecontents{subsection}[1.25cm] % Indentation
 {\addvspace{1pt}\sffamily\small} % Spacing and font options for subsections
