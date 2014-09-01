@@ -46,10 +46,10 @@
 \usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,a4paper]{geometry} % Page margins
 
 \usepackage{xcolor} % Required for specifying colors by name
-\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+\definecolor{ocre}{RGB}{44,117,255} % Define the orange color used for highlighting throughout the book
 
 % Font Settings
-\usepackage{avant} % Use the Avantgarde font for headings
+\usepackage{tgheros} % Use the Avantgarde font for headings
 %\usepackage{times} % Use the Times font for headings
 \usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
 
@@ -79,7 +79,7 @@
 \pdfcompresslevel=9
 %----------------------------------------------------------------------------------------
 \begin{document}
-
+\selectlanguage{french}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -90,9 +90,9 @@
 \centering
 \vspace*{9cm}
 \par\normalfont\fontsize{35}{35}\sffamily\selectfont
-The Search for a Title\par % Book title
+Cours de S.V.T.\\ Terminale S\par % Book title
 \vspace*{1cm}
-{\Huge Dr. John Smith}\par % Author name
+{\Huge Nicolas OGIER}\par % Author name
 \endgroup
 
 %----------------------------------------------------------------------------------------
@@ -103,21 +103,23 @@ The Search for a Title\par % Book title
 ~\vfill
 \thispagestyle{empty}
 
-\noindent Copyright \copyright\ 2013 John Smith\\ % Copyright notice
+\noindent Copyright \copyright\ 2014 Nicolas Ogier\\ % Copyright notice
 
-\noindent \textsc{Published by Publisher}\\ % Publisher
+\noindent \textsc{Published by Nicolas OGIER}\\ % Publisher
 
-\noindent \textsc{book-website.com}\\ % URL
+\noindent \textsc{\url{www.nicolas-ogier.fr}}\\ % URL
 
-\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+\noindent 
+Attribution - Pas d’Utilisation Commerciale - Partage dans les mêmes conditions 3.0\\
+Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
 
-\noindent \textit{First printing, March 2013} % Printing/edition date
+\noindent \textit{Première édition, Septembre 2014} % Printing/edition date
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
-\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+\chapterimage{chapter_head_1.jpg} % Table of contents heading image
 
 \pagestyle{empty} % No headers
 
@@ -126,6 +128,11 @@ The Search for a Title\par % Book title
 \cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
 
 \pagestyle{fancy} % Print headers again
+%----------------------------------------------------------------------------------------
+% PARTIE 1
+%----------------------------------------------------------------------------------------
+
+\part{Respiration dans les milieux de vie}
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 1
@@ -133,7 +140,7 @@ The Search for a Title\par % Book title
 
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 
-\chapter{Text Chapter}
+\chapter{Là où tout commence}
 
 \section{Paragraphs of Text}\index{Paragraphs of Text}
 
@@ -181,7 +188,7 @@ Lists are useful to present information in a concise and/or ordered way\footnote
 
 \chapter{In-text Elements}
 
-\section{Theorems}\index{Theorems}
+\section{Théorèmes}\index{Théoremes}
 
 This is an example of theorems.
 
